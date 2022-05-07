@@ -4,9 +4,10 @@
 //TODO : calculate the downward rounded average of the marks array
 
 function getAverage(marks){
-  let marksAverage = marks => marks.reduce((acc,c) => acc + c, 0) / marks.length;
+  let marksAverage = marks.reduce((acc,c) => acc + c, 0) / marks.length;
   let roundedDown = Math.floor(Number(marksAverage));
   return roundedDown;
 }
 
-//const average = arr => arr.reduce((a,b) => a + b, 0) / arr.length;
+//CLEAN
+//return Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
