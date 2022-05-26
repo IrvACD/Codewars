@@ -4,5 +4,13 @@
 //None of the arrays will be empty, so you don't have to worry about that!
 
 function removeEveryOther(arr){
-    
+  for(let i = 0; i < arr.length; i++){    
+    if (i % 2 !== 0) { 
+      delete arr[i]; 
+    }
   }
+  arr = arr.filter(element => {
+    return element !== undefined;
+  });
+  return arr
+}
