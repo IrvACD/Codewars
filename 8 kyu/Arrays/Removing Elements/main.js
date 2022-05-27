@@ -14,3 +14,9 @@ function removeEveryOther(arr){
   });
   return arr
 }
+
+//Best practice
+//return arr.filter(function(elem, index) {
+//    return index % 2 === 0;
+//  });
+//}
