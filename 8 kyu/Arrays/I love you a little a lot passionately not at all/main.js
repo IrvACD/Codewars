@@ -11,5 +11,11 @@
 //Your goal in this kata is to determine which phrase the girls would say for a flower of a given number of petals, where nb_petals > 0.
 
 function howMuchILoveYou(nbPetals) {
-    // your code
+    const petals = ["I love you","a little","a lot","passionately","madly","not at all"];
+    let arrayIndex = ((nbPetals - 1) + petals.length) % petals.length;
+    return petals[arrayIndex];
 }
+
+//Solution: https://stackoverflow.com/questions/41274905/how-to-implement-carousel-with-an-array
+//Best practice: 
+//return petals[(n - 1) % petals.length]
