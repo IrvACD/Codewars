@@ -4,5 +4,11 @@
 
 function twoSort(s) {
     s.sort();
-    
+    let str = s[0]
+    const result = str.split('').join('***');
+    return result
 }
+
+//Solution: https://bobbyhadz.com/blog/javascript-add-space-between-characters
+//Best practice:
+//return s.sort()[0].split('').join('***');
