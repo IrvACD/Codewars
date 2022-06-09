@@ -1,6 +1,6 @@
 //Write a function that takes a list of strings as an argument and returns a filtered list containing the same elements but with the 'geese' removed.
 
-//The geese are any strings in the following array, which is pre-populated in your solution:
+//The 'geese' are any strings in the following array, which is pre-populated in your solution:
 //["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
 
 //For example, if this array were passed as an argument:
@@ -24,4 +24,7 @@ function gooseFilter (birds) {
 
 };
 
-gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"])
+//Solution: https://melvingeorge.me/blog/remove-elements-contained-in-another-array-javascript
+
+//Best practice:
+//return birds.filter(b => !geese.includes(b));
