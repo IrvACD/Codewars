@@ -6,3 +6,11 @@
 
 //arr(5) // => [0,1,2,3,4]
 //Note: The parameter is optional. So you have to give it a default value.
+
+function arr(n){
+    var newArr = [];
+    for(var i = 0; i < n; i++){
+      newArr.push(i);
+    }
+    return newArr;
+  }
