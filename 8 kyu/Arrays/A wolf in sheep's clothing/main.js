@@ -13,3 +13,16 @@
 //Input: ["sheep", "sheep", "wolf"]
 //Output: "Pls go away and stop eating my sheep"
 
+function warnTheSheep(queue) {
+    queue = queue.reverse()
+
+    if(queue[0] === "wolf"){
+        console.log("Pls go away and stop eating my sheep")
+    }
+
+    for(let i = 0; i <= queue.length; i++){
+        if(queue)
+    }
+}
+
+warnTheSheep(["sheep", "sheep", "sheep", "wolf", "sheep"])
