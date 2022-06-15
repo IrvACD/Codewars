@@ -14,15 +14,21 @@
 //Output: "Pls go away and stop eating my sheep"
 
 function warnTheSheep(queue) {
-    queue = queue.reverse()
+    queue = queue.reverse();
 
     if(queue[0] === "wolf"){
-        console.log("Pls go away and stop eating my sheep")
-    }
-
-    for(let i = 0; i <= queue.length; i++){
-        if(queue)
-    }
+        return "Pls go away and stop eating my sheep";
+    }else{
+        for(let i = 1; i <= queue.length; i++){
+            if(queue[i] === "wolf"){
+                return `Oi! Sheep number ${i}! You are about to be eaten by a wolf!`;
+            }
+        }
+    }   
 }
 
-warnTheSheep(["sheep", "sheep", "sheep", "wolf", "sheep"])
+//BEST PRACTICE:
+//function warnTheSheep(queue) {
+//    const position = queue.reverse().indexOf('wolf');
+//    return position === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ position }! You are about to be eaten by a wolf!`;
+//  }
