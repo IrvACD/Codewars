@@ -12,3 +12,10 @@
 //""     =>  NULL
 //"1"    =>  NULL
 //"1,2"  =>  NULL
+
+function array(arr){
+    substringsArr = arr.split(" ");
+
+    if()
+}
+    
