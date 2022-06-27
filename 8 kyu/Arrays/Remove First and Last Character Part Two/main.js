@@ -14,8 +14,14 @@
 //"1,2"  =>  NULL
 
 function array(arr){
-    substringsArr = arr.split(" ");
-
-    if()
+    let substringsArr = Array.from(arr) // me falta agregar código para eliminar las comas 
+    if(substringsArr.length <= 2){
+        return "NULL"
+    }else{
+        substringsArr.shift()
+        substringsArr.pop()
+        substringsArr.join(' ')
+        return substringsArr
+    }
 }
     
