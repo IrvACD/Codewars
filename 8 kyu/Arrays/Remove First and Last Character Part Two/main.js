@@ -14,10 +14,11 @@
 //"1,2"  =>  NULL
 
 function array(arr){
-    let substringsArr = Array.from(arr).filter(",") // me falta agregar código para eliminar las comas, con eso obtengo el length correcto y el array para poder trabajar con la condicional
-    let filteredArray = substringsArr.filter((character) => character = ","); //aún no funciona
+    let substringsArr = Array.from(arr) 
+    let filtered = substringsArr.filter(function(value){ 
+        return value == ',';
+    });
 
-    
     if(substringsArr.length <= 2){
         return "NULL"
     }else{
@@ -28,3 +29,14 @@ function array(arr){
     }
 }
     
+//TEST
+
+function array(arr){
+    let substringsArr = Array.from(arr) 
+    let filtered = substringsArr.filter(function(value){ 
+        return value == ',';
+    });
+    console.log(filtered)
+ }
+
+ console.log(array("1,2,3,4,5"))
