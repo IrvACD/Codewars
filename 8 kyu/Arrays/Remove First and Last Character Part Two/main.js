@@ -14,29 +14,21 @@
 //"1,2"  =>  NULL
 
 function array(arr){
-    let substringsArr = Array.from(arr) 
-    let filtered = substringsArr.filter(function(value){ 
-        return value == ',';
+    let substringsArray = Array.from(arr) //para crear un array a partir de un string
+    let filtered = substringsArray.filter(function(value){ //para quitar las comas
+        return value !== ',';
     });
 
-    if(substringsArr.length <= 2){
-        return "NULL"
+    if(filtered.length <= 2){ //arrays con 2 o menos elementos contestan con null
+        return null
     }else{
-        substringsArr.shift()
-        substringsArr.pop()
-        substringsArr.join(' ')
-        return substringsArr
+        filtered.shift() //eliminar el primer elemento del array
+        filtered.pop() //eliminar el último elemento del array
+        return (filtered.join(" ")) //unir los elementos del array en un solo string, agregando espacio en medio
     }
 }
     
-//TEST
-
-function array(arr){
-    let substringsArr = Array.from(arr) 
-    let filtered = substringsArr.filter(function(value){ 
-        return value == ',';
-    });
-    console.log(filtered)
- }
-
- console.log(array("1,2,3,4,5"))
+//BEST PRACTICE
+//function array(arr){
+//    return arr.split(",").slice(1,-1).join(" ") || null;
+//}
