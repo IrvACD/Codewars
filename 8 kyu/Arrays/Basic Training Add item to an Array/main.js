@@ -4,3 +4,8 @@
 //The websites array has already been defined for you using the following code:
 
 //var websites = [];
+
+function addValue(websites,value){
+    var websites = [];
+    return websites.push(value), websites;
+  }
