@@ -5,7 +5,7 @@
 
 //var websites = [];
 
-function addValue(websites,value){
+function addValue(){
     var websites = [];
-    return websites.push(value), websites;
+    return websites.push("codewars");
   }
