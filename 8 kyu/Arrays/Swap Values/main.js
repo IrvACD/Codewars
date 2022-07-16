@@ -3,13 +3,5 @@
 //Can you figure out what's wrong here?
 
 function swapValues() {
-    var args = Array.prototype.slice.call(arguments);
-    var temp = args[1];
-    args[0] = args[0];
-    args[1] = temp;
-
-    
-}
-
-var list1 = list(1, 2, 3)
-  
+    return arguments[0].reverse();
+  }
