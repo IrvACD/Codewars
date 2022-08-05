@@ -10,5 +10,17 @@ for (let i = 0; i < myArray.length; i++) {
   }
 }
 
-let bobsFollowers = ['Tim', 'Bob', 'Marth', 'Arthur']
+//For each element in the outer loop array, myArray, the inner loop will run in its entirety comparing the current element from the outer array, myArray[i], to each element in the inner array, yourArray[j]. When it finds a match, it prints a string to the console.
 
+
+let bobsFollowers = ['Tim', 'Bob', 'Marth', 'Arthur']
+let tinasFollowers = ['Ray', 'Tim', 'Bob']
+let mutualFollowers = []
+
+for(let i = 0; i < bobsFollowers.length; i++){
+  for(let j = 0; j < tinasFollowers.length; j++){
+    if(bobsFollowers[i] === tinasFollowers[j]){
+      mutualFollowers.push(bobsFollowers[i])
+    }
+  }
+};
