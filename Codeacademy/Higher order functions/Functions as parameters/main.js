@@ -14,3 +14,11 @@ const anotherFunc = () => {
  
 higherOrderFunc(anotherFunc);
 
+//In this example, we invoke 'higherOrderFunc()' with an anonymous function (a function without a name) that counts to 10. Anonymous functions can be arguments too!
+
+higherOrderFunc(() => {
+  for (let i = 0; i <= 10; i++){
+    console.log(i);
+  }
+});
+
